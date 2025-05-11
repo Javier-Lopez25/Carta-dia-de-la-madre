@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para el Día de las Madres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>Feliz Día de las Madres</h1>
+        </div>
+        <div class="message">
+            <p>Querida Mamá Alicia,</p>
+            <p>En este día tan especial, quiero agradecerte por todo lo que haces por mí. Tu amor y apoyo me han hecho ser la persona que soy hoy. Gracias por tu paciencia, tus consejos y por estar siempre a mi lado.</p>
+            <p>Te quiero mucho. ¡Feliz Día de las Madres!</p>
+        </div>
+        <button class="reveal-btn" onclick="revealMessage()">Ver más</button>
+        <div class="extra-message" id="extraMessage">
+            <p>Siempre estaré agradecido por el sacrificio que has hecho para darme lo mejor de ti Gracias </p>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            const extraMessage = document.getElementById('extraMessage');
+            extraMessage.style.display = extraMessage.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
